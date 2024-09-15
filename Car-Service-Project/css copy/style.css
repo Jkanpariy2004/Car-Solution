@@ -1,0 +1,280 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+a.bg-dark:hover,
+a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333030;
+}
+body.menu-show {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.car-list {
+  overflow-x: scroll;
+}
+
+.table {
+  min-width: 1000px !important;
+  width: 100%;
+}
+.table th {
+  font-weight: 500;
+}
+.table .thead-primary {
+  background: transparent;
+}
+.table .thead-primary tr th {
+  padding: 30px 10px;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+.table .thead-primary tr th.heading {
+  border-right: 1px solid #fff !important;
+  position: relative;
+}
+.table .thead-primary tr th.heading:last-child {
+  border-right: none !important;
+}
+/* .table .thead-primary tr th.heading:after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 100px 0 100px;
+  border-color: #1089ff transparent transparent transparent;
+  margin: 0 auto;
+  z-index: 1;
+} */
+.table .thead-primary tr th.bg-black:after {
+  border-color: #000000 transparent transparent transparent;
+}
+.table .thead-primary tr th.bg-dark:after {
+  border-color: #343a40 transparent transparent transparent;
+}
+.table tbody tr td {
+  vertical-align: middle;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+.table tbody tr td.car-image .img {
+  display: block;
+  width: 180px;
+  height: 100px;
+  margin: 0 auto;
+}
+.table tbody tr td.product-name h3 {
+  font-size: 18px;
+}
+.table tbody tr td.product-name .rated span {
+  color: #01d28e;
+}
+.table tbody tr td.product-name .rated span:nth-child(1) {
+  color: #000000;
+}
+.table tbody tr td.product-name .rated span:last-child {
+  color: rgba(0, 0, 0, 0.1);
+}
+.table tbody tr td.price {
+  text-align: center !important;
+  background: rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff !important;
+  position: relative;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.table tbody tr td.price:last-child {
+  border-left: none;
+}
+.table tbody tr td.price h3 {
+  position: relative;
+}
+.table tbody tr td.price h3 small {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  font-size: 14px;
+}
+.table tbody tr td.price h3 span.num {
+  color: #1089ff;
+  font-size: 20px;
+  position: relative;
+}
+.table tbody tr td.price h3 span.per {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.table tbody tr td.price .subheading {
+  font-size: 14px;
+}
+.table tbody tr td.price .btn-custom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.table tbody tr td.price .btn-custom a {
+  padding: 7px 20px;
+  display: inline-block;
+  background: #1089ff;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17);
+  box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17);
+}
+.table tbody tr td.price .price-rate {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* .table tbody tr td.price:hover.price {
+  background: #01d28e;
+} */
+.table tbody tr td.price:hover .btn-custom {
+  opacity: 1;
+}
+.table tbody tr td.price:hover .price-rate {
+  opacity: 0;
+}
+
+.bg-primary {
+  background: #1089ff !important;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+small {
+  margin: -10px;
+}
+
+.loginicon {
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19");
+  src: url("../fonts/ionicons/fonts/ionicons.eot?v=4.0.0-19#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ionicons/fonts/ionicons.woff2?v=4.0.0-19") format("woff2"),
+    url("../fonts/ionicons/fonts/ionicons.woff?v=4.0.0-19") format("woff"),
+    url("../fonts/ionicons/fonts/ionicons.ttf?v=4.0.0-19") format("truetype"),
+    url("../fonts/ionicons/fonts/ionicons.svg?v=4.0.0-19#Ionicons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.ion,
+.ionicons,
+.ion-ios-add:before,
+.ion-ios-square-outline:before,
+.ion-ios-star:before,
+.ion-ios-star-half:before,
+.ion-ios-star-outline:before,
+.ion-ios-stats:before,
+.ion-ios-stopwatch:before,
+.ion-md-woman:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  /* speak: none; */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ion-ios-add:before {
+  content: "\f125";
+}
+.ion-ios-arrow-dropleft:before {
+  content: "\f112";
+}
+.ion-ios-basketball:before {
+  content: "\f3e0";
+}
+.ion-ios-battery-charging:before {
+  content: "\f120";
+}
+.ion-ios-square-outline:before {
+  content: "\f15c";
+}
+.ion-ios-star:before {
+  content: "\f4b3";
+}
+.ion-ios-star-half:before {
+  content: "\f4b1";
+}
+.ion-ios-star-outline:before {
+  content: "\f4b2";
+}
